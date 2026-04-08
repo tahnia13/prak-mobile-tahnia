@@ -19,12 +19,15 @@
         app:layout_constraintVertical_bias="0.176" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="96dp"
-        android:layout_height="65dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="565dp" />
+        android:id="@+id/btntoFourth"
+        android:layout_width="131dp"
+        android:layout_height="73dp"
+        android:text="Kirim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -33,7 +36,9 @@
         android:ems="10"
         android:inputType="text"
         android:text="Name"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="421dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
