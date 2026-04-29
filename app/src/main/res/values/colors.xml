@@ -3,4 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="abu_gelap">#565151</color>
+    <color name="cyan">#3E9DB4</color>
+    <color name="green">#489735</color>
+    <color name="yellow">#B8A353</color>
 </resources>

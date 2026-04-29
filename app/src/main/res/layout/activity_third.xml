@@ -6,17 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B19D3A3A"
-    tools:context=".pertemuan_3.ThirdActivity">
+    tools:context=".Home.pertemuan_3.ThirdActivity">
 
     <TextView
         android:id="@+id/textVerif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/fontsaya"
-        android:textSize="25sp"
         android:text="@string/verif"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="385dp" />
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="390dp" />
 
     <Button
         android:id="@+id/button"
