@@ -32,7 +32,7 @@ class AuthActivity : AppCompatActivity() {
             val password = binding.edtPasswordText.text.toString()
 
             if (username == password ) {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, BaseActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

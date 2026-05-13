@@ -11,6 +11,7 @@ import com.example.tahniaapps.AuthActivity
 import com.example.tahniaapps.Home.pertemuan_3.ThirdActivity
 import com.example.tahniaapps.Home.pertemuan_4.FourthActivity
 import com.example.tahniaapps.Home.pertemuan_7.SeventhActivity
+import com.example.tahniaapps.Home.pertemuan9.NinthActivity
 import com.example.tahniaapps.R
 import com.example.tahniaapps.databinding.FragmentHomeBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -53,6 +54,12 @@ class HomeFragment : Fragment() {
         // Tombol ke SeventhActivity (Pertemuan 7)
         binding.button4.setOnClickListener {
             val intent = Intent(requireContext(), SeventhActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Button Pertemuan 9 - TAMBAHKAN INI
+        binding.btnToNinth.setOnClickListener {
+            val intent = Intent(activity, NinthActivity::class.java)
             startActivity(intent)
         }
 
