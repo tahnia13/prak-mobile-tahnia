@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.tahniaapps.AuthActivity
+import com.example.tahniaapps.Home.Pertemuan_10.TenthActivity
 import com.example.tahniaapps.Home.pertemuan_3.ThirdActivity
 import com.example.tahniaapps.Home.pertemuan_4.FourthActivity
 import com.example.tahniaapps.Home.pertemuan_7.SeventhActivity
@@ -60,6 +61,11 @@ class HomeFragment : Fragment() {
         // Button Pertemuan 9 - TAMBAHKAN INI
         binding.btnToNinth.setOnClickListener {
             val intent = Intent(activity, NinthActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToTenth.setOnClickListener {
+            val intent = Intent(activity, TenthActivity::class.java)
             startActivity(intent)
         }
 

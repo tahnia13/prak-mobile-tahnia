@@ -14,17 +14,18 @@ class MessageFragment : Fragment() {
     private var _binding: FragmentMessageBinding? = null
     private val binding get() = _binding!!
 
+    // 🔥 GANTI URL dengan yang lebih stabil
     private val messageList = listOf(
-        MessageModel(senderName = "Alya", messageText = "Halo! Apa kabar?", avatarUrl = "https://avatar.iran.liara.run/public/1"),
-        MessageModel(senderName = "Budi", messageText = "Sudah makan?", avatarUrl = "https://avatar.iran.liara.run/public/2"),
-        MessageModel(senderName = "Citra", messageText = "Jangan lupa tugasnya ya!", avatarUrl = "https://avatar.iran.liara.run/public/3"),
-        MessageModel(senderName = "Dika", messageText = "Besok kita rapat jam 9", avatarUrl = "https://avatar.iran.liara.run/public/4"),
-        MessageModel(senderName = "Eka", messageText = "Nice job kemarin!", avatarUrl = "https://avatar.iran.liara.run/public/5"),
-        MessageModel(senderName = "Fajar", messageText = "Lagi ngapain?", avatarUrl = "https://avatar.iran.liara.run/public/6"),
-        MessageModel(senderName = "Gita", messageText = "Boleh minta tolong?", avatarUrl = "https://avatar.iran.liara.run/public/7"),
-        MessageModel(senderName = "Hana", messageText = "Lihat email ya!", avatarUrl = "https://avatar.iran.liara.run/public/8"),
-        MessageModel(senderName = "Irfan", messageText = "Oke noted", avatarUrl = "https://avatar.iran.liara.run/public/9"),
-        MessageModel(senderName = "Joko", messageText = "Sampai jumpa besok", avatarUrl = "https://avatar.iran.liara.run/public/10")
+        MessageModel("Alya", "Halo! Apa kabar?", "https://cdn.pixabay.com/photo/2023/09/01/21/03/ai-generated-8227361_1280.jpg"),
+        MessageModel("Budi", "Sudah makan?", "https://cdn.pixabay.com/photo/2023/06/25/17/07/ai-generated-8088132_1280.jpg"),
+        MessageModel("Citra", "Jangan lupa tugasnya ya!", "https://cdn.pixabay.com/photo/2023/09/18/13/21/ai-8259884_1280.jpg"),
+        MessageModel("Dika", "Besok kita rapat jam 9", "https://cdn.pixabay.com/photo/2023/06/17/14/13/ai-generated-8070987_1280.jpg"),
+        MessageModel("Eka", "Nice job kemarin!", "https://cdn.pixabay.com/photo/2023/10/03/13/10/ai-generated-8291447_1280.jpg"),
+        MessageModel("Fajar", "Lagi ngapain?", "https://cdn.pixabay.com/photo/2023/10/28/10/42/ai-generated-8347435_1280.jpg"),
+        MessageModel("Gita", "Boleh minta tolong?", "https://cdn.pixabay.com/photo/2024/01/15/12/45/ai-generated-8510433_1280.jpg"),
+        MessageModel("Hana", "Lihat email ya!", "https://cdn.pixabay.com/photo/2023/11/28/14/03/ai-8416873_1280.jpg"),
+        MessageModel("Irfan", "Oke noted", "https://cdn.pixabay.com/photo/2023/10/10/06/17/ai-generated-8305696_1280.jpg"),
+        MessageModel("Joko", "Sampai jumpa besok", "https://cdn.pixabay.com/photo/2023/11/24/22/40/ai-generated-8409606_1280.jpg")
     )
 
     override fun onCreateView(
@@ -39,6 +40,7 @@ class MessageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Setup Toolbar
         (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
         (requireActivity() as AppCompatActivity).supportActionBar?.apply {
             title = "Message"
