@@ -16,6 +16,9 @@
         android:theme="@style/Theme.TahniaApps"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Message.tutorial.TutorialMessageActivity"
+            android:exported="false" />
+        <activity
             android:name=".Home.Pertemuan_10.TenthActivity"
             android:exported="false" />
         <activity
